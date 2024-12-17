@@ -1,0 +1,16 @@
+using System;
+namespace ConvertNumToWords{
+
+class Program {
+    static void Main(string[] args) {
+        string[] words = { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
+
+        Console.Write("Enter a number: ");
+        string num = Console.ReadLine();
+
+        foreach (char c in num) {
+            Console.Write($"{words[c - '0']} ");
+        }
+    }
+}
+}
